@@ -215,3 +215,103 @@ a{
         margin-top: 1rem;
     }
 }
+
+/* PRODUCTS SECTION 1 STAR-WAR*/
+
+main {
+    padding: 2rem 0;
+}
+@media (min-width: 1440px) {
+    main {
+        padding: 5rem 0;
+    }
+}
+.star-wars__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star-wars__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-gray);
+    margin: 0;
+}
+@media (min-width: 1400px) {
+    .star-wars__title {
+        font-size: 3.2rem;
+    }
+}
+.star-wars__enlaces {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.star-wars__enlace {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .star-wars__enlace {
+        font-size: 1.6rem;
+    }
+}
+
+/* CARDS-STAR-WARS */
+.card-star-wars__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+@media (min-width: 768px) {
+    .card-star-wars__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1440px) {
+    .card-star-wars__grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+.card-StarWars {
+    display: flex;
+    flex-direction: column;
+}
+.card-StarWars:nth-child(5),
+.card-StarWars:nth-child(6) {
+    display: none;
+}
+@media (min-width: 1440px) {
+    .card-StarWars:nth-child(5),
+    .card-StarWars:nth-child(6) {
+        display: block;
+    }
+}
+.star-wars__imagen {
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+}
+.card-starWars__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-gray);
+}
+.card-starWars__price {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.card-starWars__enlace {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-blue);
+}
+@media (min-width: 768px) {
+    .card-starWars__enlace {
+        font-size: 1.6rem;
+    }
+}
