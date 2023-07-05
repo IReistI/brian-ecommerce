@@ -315,3 +315,15 @@ main {
         font-size: 1.6rem;
     }
 }
+
+
+/* PRODUCTS SECTION 2 consoles*/
+
+.consoles {
+    margin-top: 3rem;
+}
+@media (min-width: 768px) {
+    .consoles {
+        margin-top: 5rem;
+    }
+}
