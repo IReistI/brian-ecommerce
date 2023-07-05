@@ -260,63 +260,6 @@ main {
     }
 }
 
-/* CARDS-STAR-WARS */
-.card-star-wars__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 1rem;
-}
-@media (min-width: 768px) {
-    .card-star-wars__grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-@media (min-width: 1440px) {
-    .card-star-wars__grid {
-        grid-template-columns: repeat(6, 1fr);
-    }
-}
-.card-StarWars {
-    display: flex;
-    flex-direction: column;
-}
-.card-StarWars:nth-child(5),
-.card-StarWars:nth-child(6) {
-    display: none;
-}
-@media (min-width: 1440px) {
-    .card-StarWars:nth-child(5),
-    .card-StarWars:nth-child(6) {
-        display: block;
-    }
-}
-.star-wars__imagen {
-    width: 100%;
-    height: 17rem;
-    object-fit: cover;
-}
-.card-starWars__text {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--color-gray);
-}
-.card-starWars__price {
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-.card-starWars__enlace {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--color-blue);
-}
-@media (min-width: 768px) {
-    .card-starWars__enlace {
-        font-size: 1.6rem;
-    }
-}
-
-
 /* PRODUCTS SECTION 2 consoles*/
 
 .consoles {
@@ -325,5 +268,139 @@ main {
 @media (min-width: 768px) {
     .consoles {
         margin-top: 5rem;
+    }
+}
+.consoles__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.consoles__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-gray);
+    margin: 0;
+}
+@media (min-width: 1400px) {
+    .consoles__title {
+        font-size: 3.2rem;
+    }
+}
+.consoles__enlaces {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.consoles__enlace {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .consoles__enlace {
+        font-size: 1.6rem;
+    }
+}
+
+/*PRODUCTS SECTION 3 various*/
+
+.various {
+    margin-top: 3rem;
+}
+@media (min-width: 768px) {
+    .various {
+        margin-top: 5rem;
+    }
+}
+.various__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.various__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-gray);
+    margin: 0;
+}
+@media (min-width: 1400px) {
+    .various__title {
+        font-size: 3.2rem;
+    }
+}
+.various__enlaces {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.various__enlace {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .various__enlace {
+        font-size: 1.6rem;
+    }
+}
+
+/* CARDS */
+
+.card__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+@media (min-width: 768px) {
+    .card__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1440px) {
+    .card__grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.card:nth-child(5),
+.card:nth-child(6) {
+    display: none;
+}
+@media (min-width: 1440px) {
+    .card:nth-child(5),
+    .card:nth-child(6) {
+        display: block;
+    }
+}
+.card__imagen {
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+}
+.card__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-gray);
+}
+.card__price {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.card__enlace {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-blue);
+}
+@media (min-width: 768px) {
+    .card__enlace {
+        font-size: 1.6rem;
     }
 }
