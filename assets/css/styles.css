@@ -2,7 +2,8 @@
     --color-bg1: #fff;
     --color-bg2: #F5F5F5;
     --color-blue: #2A7AE4;
-    --color-gray: #464646; 
+    --color-gray: #464646;
+    --color-red: #ff0000; 
 }
 html {
     font-size: 62.5%;
@@ -10,7 +11,7 @@ html {
 }
 body {
     font-size: 1.6rem;
-    background-color: var(--color-bg1);
+    background-color: var(--color-bg2);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -39,6 +40,9 @@ a{
 }
 
 /* Header */
+header {
+    background-color: var(--color-bg1);
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -570,6 +574,7 @@ main {
 /* FOOTER */
 .footer {
     padding: 2rem 0;
+    background-color: var(--color-bg1);
 }
 @media (min-width: 768px) {
     .footer {
@@ -581,4 +586,83 @@ main {
     color: var(--color-gray);
     font-size: 1.6rem;
     font-weight: 500;
+}
+
+
+/* HOME-lOGIN */
+
+.form-login__flex {
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0;
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+.form-login__title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-gray);
+    margin: 0;
+}
+@media (min-width: 1440px) {
+    .form-login__title {
+        font-size: 2rem;
+    }
+}
+.form-login__mask {
+    padding: 1.3rem 1rem;
+    background-color: var(--color-bg1);
+    width: 115%;
+    border-bottom: 1px solid #C8C8C8;
+}
+@media (min-width: 1440px) {
+    .form-login__mask {
+        padding: 2.5rem 1rem;
+        width: 170%;
+    }
+}
+.form-login__input {
+    all: unset;
+    font-size: 1.6rem;
+    color: #a2a2a2;
+    font-weight: 400;
+    width: 100%;
+}
+.form-login__send {
+    all: unset;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.2rem 3rem;
+    background-color: var(--color-blue);
+    color: var(--color-bg1);
+    transition: color 200ms ease-in-out;
+}
+@media (min-width: 1440px) {
+    .form-login__send {
+        font-size: 1.8rem;
+        padding: 2.5rem;
+        width: 150%;
+        text-align: center;
+    }
+}
+.form-login__send:hover {
+    color: var(--color-gray);
+    cursor: pointer;
+}
+.form-login__alert {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-bg1);
+}
+.form-login__mask--alert {
+    padding: 1rem 0;
+    background-color: var(--color-red);
 }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura E-commerce by BRAIAN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/black-mode.css">
+</head>
+<body>
+    <header>
+        <section class="nav container">
+            <div class="nav__logo-busqueda">
+                <a href="index.html"><img class="nav__logo" src="assets/img/Logo.png" alt="logo alura week" width="300" height="100"></a>
+                <form action="#" class="busqueda">
+                    <div class="busqueda__mask">
+                        <input class="busqueda__input" type="tex1t" placeholder="¿Qué deseas buscar?">
+                        <img class="busqueda__icono" src="assets/icons/icons8-búsqueda.svg" alt="busqueda icono">
+                    </div>
+                </form>
+            </div>
+            <div class="nav__logo2">
+                <img class="nav__icono" src="assets/icons/icons8-búsqueda-oscuro.svg" alt="busqueda icono">
+            </div>
+        </section>
+    </header>    
+    <main class="container form-login__flex">
+        <form action="#" class="form-login">
+            <h3 class="form-login__title">Iniciar Sesión</h3>
+            <div class="form-login__mask">
+                <input type="email" class="form-login__input" id="login-email" placeholder="Escriba su correo electrónico">
+            </div>
+            <div class="form-login__mask">
+                <input type="password" min="6" class="form-login__input" id="login-password" placeholder="Escriba su contraseña">
+            </div>
+            <input type="submit" value="Entrar" class="form-login__send" id="login-send">
+        </form>
+    </main>
+    <section class="contacto">
+        <div class="contacto__grid container">
+            <div class="contacto__center">
+                <img class="contacto__img" src="/assets/img/Logo.png" alt="logo aluraWeek">
+            </div>
+            <div class="contacto__enlaces"> 
+                <ul>
+                    <li><a href="#" class="contacto__link">Quienes Somos</a></li>
+                    <li><a href="#" class="contacto__link">Política de Privacidad</a></li>
+                    <li><a href="#" class="contacto__link">Programa de fidelidad</a></li>
+                    <li><a href="#" class="contacto__link">Nuestras Tiendas</a></li>
+                    <li><a href="#" class="contacto__link">Quiero ser financiado</a></li>
+                    <li><a href="#" class="contacto__link">Anúncie Aquí</a></li>
+                </ul>
+            </div>
+            <div class="contacto__form">
+                <form action="#" class="form">
+                    <h3 class="form__title">Hable con nosotros</h3>
+                    <div class="form__mask">
+                        <label for="input-name" class="form__name">Nombre</label>
+                        <input type="text" id="input-name" class="form__input" placeholder="Tu nombre..">
+                    </div>
+                    <div class="form__mask">
+                        <textarea class="form__textarea" placeholder="Escribe tu mensaje" id="textarea" cols="20" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar Mensaje" class="form__enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">Desarrolado por Braian Nuñez</p>
+        <p class="footer__text">2023</p>
+    </footer>
+    <div class="btn-flotante">
+        <img id="btnFlotante" class="btn-img" src="/assets/icons/icon-moon.svg" alt="black mode">
+    </div>
+    <script src="/assets/js/black-mode.js"></script>
+</body>
+</html>
