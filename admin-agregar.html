@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BASE Alura E-commerce by BRAIAN</title>
+    <title>ADMIN Alura E-commerce by BRAIAN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <header>
         <nav class="nav container">
             <div class="nav__logo-busqueda">
-                <a href="#"><img class="nav__logo" src="assets/img/Logo.png" alt="logo alura week" width="300" height="100"></a>
+                <a href="productos.html"><img class="nav__logo" src="assets/img/Logo.png" alt="logo alura week" width="300" height="100"></a>
                 <form action="#" class="busqueda">
                     <div class="busqueda__mask">
                         <input class="busqueda__input" type="tex1t" placeholder="¿Qué deseas buscar?">
@@ -24,30 +24,62 @@
                 </form>
             </div>
             <div class="nav__login">
-               <button href="login.html" class="nav__boton" id="btn-Login">Login</button> 
+               <button href="login.html" class="nav__boton nav__boton--admin" id="btn-Login"><span>Menú</span><span>Administrador</span></button> 
             </div>
             <div class="nav__logo2">
                 <img class="nav__icono" src="assets/icons/icons8-búsqueda-oscuro.svg" alt="busqueda icono">
             </div>
         </nav>
         
-        <section class="hero">
-            <div class="hero__flex container">
-                <div class="hero__todo">
-                    <h1 class="hero__title">Febrero Promocional</h1>
-                    <p class="hero__text">Productos seleccionados con 33% de descuento</p>
-                    <a href="#" value="Ver Consolas" class="hero__button">Ver Consolas</a>
+    </header>  
+
+    <main class="container agregar">
+        
+        <h1 class="agregar__title">Agregar un nuevo producto</h1>
+        <form action="#" class="form-agregar">
+            <div class="form-agregar__imagen">
+                <div class="form-agregar__box">
+                    <img class="form-agregar__img" src="/assets/icons/icon-image-search.svg" alt="icon image">
+                    <h2 class="form-agregar__text">Arrastrá para agregar una imagen del producto</h2>
+                </div>
+                <p>O</p>
+                <div class="form-agregar__button">
+                    <input type="file" id="fileElem" multiple accept="image/*" style="display: none;">
+                    <label for="fileElem" class="form-agregar__btn">Busque en su computador</label>
                 </div>
             </div>
-        </section>
-    </header>    
-    <main class="container">
+            <div class="form-agregar__mask">
+                <label for="input-url" class="form-agregar__label">URL de la imagen
+                    <input class="form-agregar__input" type="url" name="url-image" id="input-url" required>
+                </label>
+            </div>
+            <div class="form-agregar__mask">
+                <label for="input-categoria" class="form-agregar__label">Categoria
+                    <input class="form-agregar__input" type="text" name="categoria" id="input-categoria" required>
+                </label>
+            </div>
+            <div class="form-agregar__mask">
+                <label for="input-producto" class="form-agregar__label">Nombre del Producto
+                    <input class="form-agregar__input" type="text" name="producto" id="input-producto" required>
+                </label>
+            </div>
+            <div class="form-agregar__mask">
+                <label for="input-precio" class="form-agregar__label">Precio del producto
+                    <input class="form-agregar__input" type="number" name="precio" id="input-precio" min="1" required>
+                </label>
+            </div>
+            <div class="form-agregar__mask">
+                <textarea class="form-agregar__textarea" name="descripcion" id="descripcion-textarea" cols="20" rows="10" placeholder="Descripcion del producto" ></textarea>
+            </div>
+            <input class="form-agregar__submit" type="submit" value="Agregar Producto">
+        </form>
           
     </main>
+
     <section class="contacto">
         <div class="contacto__grid container">
             <div class="contacto__center">
-                <a href="#"><img class="contacto__img" src="/assets/img/Logo.png" alt="logo aluraWeek"></a>
+                <a href="productos.html"><img class="contacto__img" src="/assets/img/Logo.png" alt="logo aluraWeek"></a>
             </div>
             <div class="contacto__enlaces"> 
                 <ul>
@@ -74,13 +106,13 @@
             </div>
         </div>
     </section>
+    <div class="btn-flotante">
+        <img id="btnFlotante" class="btn-img" src="/assets/icons/icon-moon.svg" alt="black mode">
+    </div>
     <footer class="footer">
         <p class="footer__text">Desarrolado por Braian Nuñez</p>
         <p class="footer__text">2023</p>
     </footer>
-    <div class="btn-flotante">
-        <img id="btnFlotante" class="btn-img" src="/assets/icons/icon-moon.svg" alt="black mode">
-    </div>
     <script src="/assets/js/black-mode.js"></script>
 </body>
 </html>
