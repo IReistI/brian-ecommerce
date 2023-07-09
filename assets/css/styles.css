@@ -625,6 +625,10 @@ main {
     background-color: var(--color-bg1);
     width: 115%;
     border-bottom: 1px solid #C8C8C8;
+    transition: border-bottom 200ms ease-in-out;
+}
+.form-login__mask:hover {
+    border-bottom: 1px solid var(--color-blue);
 }
 @media (min-width: 1440px) {
     .form-login__mask {
@@ -786,4 +790,104 @@ main {
 .form-agregar__submit:hover {
     cursor: pointer;
     color: var(--color-gray);
+}
+
+/* PRODUCTOS-ADMIN */
+
+.products-admin__head {
+    margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+    .products-admin__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 1440px) {
+    .products-admin__head {
+        margin-bottom: 1.5rem;
+    }
+}
+.products-admin__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-gray);
+    margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+    .products-admin__title {
+        margin: 0;
+    }
+}
+@media (min-width: 1440px) {
+    .products-admin__title {
+        font-size: 3.2rem;
+    }
+}
+.productos-admin__enlace {
+    padding: 1.2rem 1.6rem;
+    color: var(--color-bg1);
+    background-color: var(--color-blue);
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: color 300ms ease-in-out;
+}
+@media (min-width: 1440px) {
+    .productos-admin__enlace {
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: 1.6rem;
+    }
+}
+.productos-admin__enlace:hover {
+    color: #daa520;
+    cursor: pointer;
+}
+
+/* PRODUCTS-ADMIN-CARDS */
+
+.admin-card__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+@media (min-width: 768px) {
+    .admin-card__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1440px) {
+    .admin-card__grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+.admin-card__img-icons {
+    position: relative;
+}
+.admin-card__imagen {
+    height: 17.4rem;
+    object-fit: cover;
+}
+.admin-card__icons {
+    display: flex;
+    position: absolute;
+    gap: .5rem;
+    top: 15px;
+    right: 15px;
+    transition: transform 100ms ease-in-out;
+}
+.admin-card__icon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.admin-card__todo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-gray);
+}
+.admin-card__price {
+    font-size: 1.6rem;
+    font-weight: 700;
 }
