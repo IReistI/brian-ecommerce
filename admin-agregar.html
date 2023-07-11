@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/black-mode.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
 </head>
 <body>
     <header>
@@ -23,8 +23,13 @@
                     </div>
                 </form>
             </div>
-            <div class="nav__login">
-               <a href="productos-admin.html" class="nav__boton nav__boton--admin" id="btn-Login"><span>Menú</span><span>Administrador</span></a> 
+            <div class="nav__icon-login">
+                <div class="btn-flotante">
+                    <img id="btnFlotante" class="btn-img" src="/assets/icons/icon-moon.svg" alt="black mode">
+                </div>
+                <div class="nav__login">
+                    <a href="productos-admin.html" class="nav__boton nav__boton--admin" id="btn-Login"><span>Menú</span><span>Administrador</span></a> 
+                 </div>
             </div>
             <div class="nav__logo2">
                 <img class="nav__icono" src="assets/icons/icons8-búsqueda-oscuro.svg" alt="busqueda icono">
@@ -106,13 +111,10 @@
             </div>
         </div>
     </section>
-    <div class="btn-flotante">
-        <img id="btnFlotante" class="btn-img" src="/assets/icons/icon-moon.svg" alt="black mode">
-    </div>
     <footer class="footer">
         <p class="footer__text">Desarrolado por Braian Nuñez</p>
         <p class="footer__text">2023</p>
     </footer>
-    <script src="/assets/js/black-mode.js"></script>
+    <script src="/assets/js/dark-mode.js"></script>
 </body>
 </html>

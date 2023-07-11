@@ -70,6 +70,11 @@ header {
 .busqueda {
     display: none;
 }
+.nav__icon-login {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
 @media (min-width: 768px) {
     .busqueda {
         display: block;
@@ -596,7 +601,6 @@ main {
 
 
 /* HOME-lOGIN */
-
 .form-login__flex {
     display: flex;
     justify-content: center;

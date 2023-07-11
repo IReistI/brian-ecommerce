@@ -1,0 +1,28 @@
+.btn-img {
+    width: 25px;
+}
+@media (min-width: 768px) {
+    .btn-img {
+        width: 30px;
+    }
+}
+.btn-img:hover {
+    cursor: pointer;
+}
+
+/* COLORES */
+.headerFooter-black {
+    background-color: #18171c;
+    color: #Fff;
+}
+.body-black {
+    background-color: #191919;
+    color: #fff;
+}
+.contacto-black {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+.text-white {
+    color: #fff;
+}
