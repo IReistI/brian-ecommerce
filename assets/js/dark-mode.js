@@ -13,7 +13,7 @@ function darkMode() {
     // Comprueba si estaba habilidado dark mode
     let darkLocal = localStorage.getItem('dark');
     if(darkLocal === 'true') {
-        btn.src = 'http://127.0.0.1:5500/assets/icons/icon-moon-white.svg';
+        btn.src = 'assets/icons/icon-moon-white.svg';
         document.body.classList.add('body-black');
         document.body.children[0].classList.add('headerFooter-black');
         document.body.children[2].classList.add('contacto-black');
@@ -39,7 +39,7 @@ function darkChange() {
     if(darkLocal === null || darkLocal === 'false') {
         // No está inicializado darkLocal o es falso
         localStorage.setItem('dark', true);
-        btn.src = 'http://127.0.0.1:5500/assets/icons/icon-moon-white.svg';
+        btn.src = 'assets/icons/icon-moon-white.svg';
         document.body.classList.add('body-black');
         document.body.children[0].classList.add('headerFooter-black');
         document.body.children[2].classList.add('contacto-black');
@@ -57,7 +57,7 @@ function darkChange() {
     } else {
         // Está activado darkMode, por lo que se desactiva
         localStorage.setItem('dark', false);
-        btn.src = 'http://127.0.0.1:5500/assets/icons/icon-moon.svg'
+        btn.src = 'assets/icons/icon-moon.svg'
         document.body.classList.remove('body-black');
         document.body.children[0].classList.remove('headerFooter-black');
         document.body.children[2].classList.remove('contacto-black');
