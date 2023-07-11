@@ -5,7 +5,7 @@ const h3 = document.querySelectorAll('h3');
 const a = document.querySelectorAll('.contacto__link');
 const pCard = document.querySelectorAll('.card__text');
 const textFooter = document.querySelectorAll('p');
-console.log(btn.src);
+
 document.addEventListener('DOMContentLoaded', () => {
     darkMode();
 });
