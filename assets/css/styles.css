@@ -73,7 +73,7 @@ header {
 .nav__icon-login {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
 }
 @media (min-width: 768px) {
     .busqueda {
