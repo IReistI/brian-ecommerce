@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/spinner.css">
 </head>
 <body>
     <header>
@@ -312,14 +313,21 @@
             <div class="contacto__form">
                 <form action="#" class="form">
                     <h3 class="form__title">Hable con nosotros</h3>
-                    <div class="form__mask">
-                        <label for="input-name" class="form__name">Nombre</label>
-                        <input type="text" id="input-name" class="form__input" placeholder="Tu nombre..">
+                    <div class="form__container-inputs">
+                        <div class="form__mask">
+                            <label for="input-name" class="form__name">Nombre</label>
+                            <input type="text" id="input-name" class="form__input" name="nombre" placeholder="Tu nombre.." required>
+                        </div>
                     </div>
-                    <div class="form__mask">
-                        <textarea class="form__textarea" placeholder="Escribe tu mensaje" id="textarea" cols="20" rows="10"></textarea>
+                    <div class="form__container-inputs">
+                        <div class="form__mask">
+                            <textarea class="form__textarea" placeholder="Escribe tu mensaje" name="mensaje" id="textarea" cols="20" rows="10" required></textarea>
+                        </div>
                     </div>
                     <input type="submit" value="Enviar Mensaje" class="form__enviar">
+                    <div class="spinner-display spinner-container">
+                        <div class="spinner"></div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -329,5 +337,6 @@
         <p class="footer__text">2023</p>
     </footer>
     <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/validation-contact-footer.js"></script>
 </body>
 </html>

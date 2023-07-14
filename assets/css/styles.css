@@ -524,10 +524,15 @@ main {
         margin-top: 0;
     }
 }
+.form__container-inputs {
+    margin-bottom: 1.7rem;
+}
+.form__container-inputs:last-of-type {
+    margin-bottom: 0;
+}
 .form__mask {
     background-color: var(--color-bg1);
     padding: 1.2rem;
-    margin-bottom: 1.7rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -538,9 +543,6 @@ main {
 }
 .form__mask:hover {
     border-bottom: 1px solid var(--color-blue);
-}
-.form__mask:last-of-type {
-    margin-bottom: 0;
 }
 .form__name {
     font-size: 1.2rem;
@@ -580,8 +582,25 @@ main {
     cursor: pointer;
     color: var(--color-gray);
 }
-
-
+.form__mask--alert {
+    margin: -1rem 0 0 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-bg1);
+}
+.form__alert {
+    padding: 1rem 0;
+    background-color: var(--color-red);
+}
+.form__alert-exito {
+    display: flex;
+    justify-content: center;
+    background-color: #adff2f;
+    padding: 1.5rem 0;
+    font-weight: 500;
+    color: var(--color-gray);
+}
 /* FOOTER */
 .footer {
     padding: 2rem 0;
@@ -667,6 +686,9 @@ main {
 .form-login__send:hover {
     color: var(--color-gray);
     cursor: pointer;
+}
+.form-login--gap {
+    gap: 1rem;
 }
 .form-login__alert {
     margin: 0;
