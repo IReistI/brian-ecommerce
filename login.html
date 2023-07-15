@@ -33,15 +33,19 @@
         </nav>
     </header>    
     <main class="container form-login__flex">
-        <form action="productos-admin.html" class="form-login">
+        <form action="#" class="form-login">
             <h3 class="form-login__title">Iniciar Sesión</h3>
-            <div class="form-login__mask">
-                <input type="email" class="form-login__input" id="login-email" placeholder="Escriba su correo electrónico">
+            <div class="form-login__container-input">
+                <div class="form-login__mask">
+                    <input type="email" name="email" class="form-login__input" id="login-email" placeholder="Escriba su correo electrónico">
+                </div>
             </div>
-            <div class="form-login__mask">
-                <input type="password" min="6" class="form-login__input" id="login-password" placeholder="Escriba su contraseña">
+            <div class="form-login__container-input">
+                <div class="form-login__mask">
+                    <input type="password" name="password" class="form-login__input" id="login-password" placeholder="Escriba su contraseña">
+                </div>
             </div>
-            <input type="submit" value="Entrar" class="form-login__send" id="login-send">
+            <input type="submit" value="Entrar" class="form-login__send opacity" id="login-send" data-button-login disabled>
         </form>
     </main>
     <section class="contacto">
@@ -85,6 +89,7 @@
         <p class="footer__text">Desarrolado por Braian Nuñez</p>
         <p class="footer__text">2023</p>
     </footer>
+    <script src="assets/js/validation-login.js"></script>
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/js/validation-contact-footer.js"></script>
 </body>

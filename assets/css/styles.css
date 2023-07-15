@@ -624,6 +624,12 @@ main {
     display: flex;
     justify-content: center;
     padding: 8rem 0;
+    width: 27.5rem;
+}
+@media (min-width: 1440px) {
+    .form-login__flex {
+        width: 42.3rem;
+    }
 }
 .form-login {
     display: flex;
@@ -631,6 +637,7 @@ main {
     justify-content: center;
     gap: 2rem;
     align-items: center;
+    width: 100%;
 }
 .form-login__title {
     font-size: 1.6rem;
@@ -643,10 +650,13 @@ main {
         font-size: 2rem;
     }
 }
+.form-login__container-input {
+    width: 100%;
+}
 .form-login__mask {
     padding: 1.3rem 1rem;
     background-color: var(--color-bg1);
-    width: 115%;
+    width: 100%;
     border-bottom: 1px solid #C8C8C8;
     transition: border-bottom 200ms ease-in-out;
 }
@@ -656,7 +666,7 @@ main {
 @media (min-width: 1440px) {
     .form-login__mask {
         padding: 2.5rem 1rem;
-        width: 170%;
+        
     }
 }
 .form-login__input {
@@ -667,7 +677,8 @@ main {
     width: 100%;
 }
 .form-login__send {
-    all: unset;
+    border: none;
+    width: 100%;
     font-size: 1.4rem;
     font-weight: 600;
     padding: 1.2rem 3rem;
@@ -679,30 +690,24 @@ main {
     .form-login__send {
         font-size: 1.8rem;
         padding: 2.5rem;
-        width: 150%;
         text-align: center;
     }
 }
-.form-login__send:hover {
-    color: var(--color-gray);
-    cursor: pointer;
-}
-.form-login--gap {
-    gap: 1rem;
-}
 .form-login__alert {
-    margin: 0;
+    margin: .5rem 0 0 0;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--color-bg1);
-}
-.form-login__mask--alert {
-    padding: 1rem 0;
     background-color: var(--color-red);
+    padding: 1rem 0;
 }
 
+.opacity {
+    opacity: 50%;
+    transition: none;
+    cursor: text;
+}
 /* ADMIN-AGREGAR */
 
 .nav__boton--admin {
