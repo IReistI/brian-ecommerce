@@ -13,6 +13,17 @@ function cargarListeners() {
     productoNombre.addEventListener('blur', verificar);
     productoPrecio.addEventListener('blur', verificar);
     productoDescripcion.addEventListener('blur', verificar);
+    window.addEventListener('resize', () => {
+        const padre = urlImg.parentElement.parentElement.parentElement;
+        console.log(padre);
+        const eliminar = padre.querySelector('.form-agregar__alerta');
+        console.log(eliminar);
+        if(eliminar) {
+            if(window.innerWidth > 1440) {
+                eliminar.remove();
+            }
+        }
+    });
 };
 function agregarProducto(e) {
     e.preventDefault();
@@ -34,7 +45,7 @@ function agregarProducto(e) {
         icon.classList.remove('form-agregar--hidden');
         text.classList.remove('form-agregar--hidden');
         agregarForm.reset();
-        limpiarAlerta(agregarForm);
+        limpiarAlerta(agregarForm, '.form-agregar__alerta-enviar');
         return;
     }
 
@@ -62,20 +73,25 @@ function verificar(e) {
         crearAlerta('Solo debes ingresar numeros', padre);
         return;
     }
-    limpiarAlerta(e.target.parentElement.parentElement.parentElement);
+    limpiarAlerta(e.target.parentElement.parentElement.parentElement, '.form-agregar__alerta');
 };
 function crearAlerta(mensaje, referencia) {
-    limpiarAlerta(referencia);
     const p = document.createElement('P');
-    p.textContent = mensaje;
-    p.classList.add('form-agregar__alerta');
-    if(referencia.classList.contains('form-agregar')) {
+    if(!referencia.classList.contains('form-agregar')) {
+        limpiarAlerta(referencia, '.form-agregar__alerta');
+        p.textContent = mensaje;
+        p.classList.add('form-agregar__alerta');
+        referencia.appendChild(p);
+    } else {
+        limpiarAlerta(referencia, '.form-agregar__alerta-enviar');
+        p.textContent = mensaje;
+        p.classList.add('form-agregar__alerta-enviar');
         p.style.marginTop = '1rem';
+        referencia.appendChild(p);
     }
-    referencia.appendChild(p);
 };
-function limpiarAlerta(referencia) {
-    const alerta = referencia.querySelector('.form-agregar__alerta');
+function limpiarAlerta(referencia, clase) {
+    const alerta = referencia.querySelector(clase);
     if(alerta) {
         referencia.removeChild(alerta);
     }

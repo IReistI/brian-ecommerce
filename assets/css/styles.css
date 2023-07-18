@@ -850,6 +850,21 @@ main {
         font-size: 2rem;
     }
 }
+.form-agregar__alerta-enviar {
+    margin: -1rem 0 1.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-bg1);
+    background-color: var(--color-red);
+    padding: 1rem 0;
+}
+@media (min-width: 1440px) {
+    .form-agregar__alerta-enviar {
+        font-size: 2rem;
+    }
+}
+
 /* PRODUCTOS-ADMIN */
 
 .products-admin__head {
