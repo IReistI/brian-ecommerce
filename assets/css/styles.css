@@ -751,6 +751,12 @@ main {
         background-color: var(--color-bg1);
         border: 1px dashed var(--color-gray);
         padding: 2rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .form-agregar--hidden {
+        z-index: -999;
     }
     .form-agregar__img {
         width: 4rem;
@@ -782,7 +788,7 @@ main {
     transition: border-bottom 200ms ease-in-out;
 }
 @media (min-width: 1440px) {
-    .form-agregar__mask:nth-child(2) {
+    .form-agregar__container-input:nth-child(2) {
         display: none;
     }
 }
@@ -800,6 +806,14 @@ main {
     font-weight: 400;
     color: var(--color-gray);
     width: 100%;
+    margin-top: .5rem;
+}
+.form-agregar__select {
+    all: unset;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-gray);
     margin-top: .5rem;
 }
 .form-agregar__textarea {
@@ -822,7 +836,20 @@ main {
     cursor: pointer;
     color: var(--color-gray);
 }
-
+.form-agregar__alerta {
+    margin: -1rem 0 1.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-bg1);
+    background-color: var(--color-red);
+    padding: 1rem 0;
+}
+@media (min-width: 1440px) {
+    .form-agregar__alerta {
+        font-size: 2rem;
+    }
+}
 /* PRODUCTOS-ADMIN */
 
 .products-admin__head {

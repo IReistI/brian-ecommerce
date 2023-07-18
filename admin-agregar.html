@@ -54,28 +54,43 @@
                     <label for="fileElem" class="form-agregar__btn">Busque en su computador</label>
                 </div>
             </div>
-            <div class="form-agregar__mask">
-                <label for="input-url" class="form-agregar__label">URL de la imagen
-                    <input class="form-agregar__input" type="url" name="url-image" id="input-url" required>
-                </label>
+            <div class="form-agregar__container-input">
+                <div class="form-agregar__mask">
+                    <label for="input-url" class="form-agregar__label">URL de la imagen
+                        <input class="form-agregar__input" type="url" name="url-image" id="input-url">
+                    </label>
+                </div>
             </div>
             <div class="form-agregar__mask">
-                <label for="input-categoria" class="form-agregar__label">Categoria
-                    <input class="form-agregar__input" type="text" name="categoria" id="input-categoria" required>
+                <label class="form-agregar__label" for="agregar-categoria">Categoria
+                    <select class="form-agregar__select" name="categoria" id="agregar-categoria">
+                        <option value="" disabled selected>--Seleccione--</option>
+                        <option value="Star Wars">Star Wars</option>
+                        <option value="Consolas">Consolas</option>
+                        <option value="Varios">Varios</option>
+                    </select>
                 </label>
             </div>
-            <div class="form-agregar__mask">
-                <label for="input-producto" class="form-agregar__label">Nombre del Producto
-                    <input class="form-agregar__input" type="text" name="producto" id="input-producto" required>
-                </label>
+            <div class="form-agregar__container-input">
+                <div class="form-agregar__mask">
+                    <label for="input-producto" class="form-agregar__label">Nombre del Producto
+                        <input class="form-agregar__input" type="text" name="producto" id="input-producto">
+                    </label>
+                </div>
             </div>
-            <div class="form-agregar__mask">
-                <label for="input-precio" class="form-agregar__label">Precio del producto
-                    <input class="form-agregar__input" type="number" name="precio" id="input-precio" min="1" required>
-                </label>
+            <div class="form-agregar__container-input">
+                <div class="form-agregar__mask">
+                    <label for="input-precio" class="form-agregar__label">Precio del producto
+                        <input class="form-agregar__input" type="number" name="precio" id="input-precio" min="1">
+                    </label>
+                </div>
             </div>
-            <div class="form-agregar__mask">
-                <textarea class="form-agregar__textarea" name="descripcion" id="descripcion-textarea" cols="20" rows="10" placeholder="Descripcion del producto" ></textarea>
+            <div class="form-agregar__container-input">
+                <div class="form-agregar__container-input">
+                    <div class="form-agregar__mask">
+                        <textarea class="form-agregar__textarea" name="descripcion" id="descripcion-textarea" cols="20" rows="10" placeholder="Descripcion del producto" ></textarea>
+                    </div>
+                </div>
             </div>
             <input class="form-agregar__submit" type="submit" value="Agregar Producto">
         </form>
@@ -125,5 +140,7 @@
     </footer>
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/js/validation-contact-footer.js"></script>
+    <script src="assets/js/select-img.js"></script>
+    <script src="assets/js/agregar-producto.js"></script>
 </body>
 </html>

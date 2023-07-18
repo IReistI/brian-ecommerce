@@ -35,7 +35,6 @@ function verificar(e) {
     };
     limpiartAlerta(e.target.parentElement.parentElement);
     datos[e.target.name] = e.target.value.trim().toLowerCase();
-    console.log(datos);
 };
 function enviarForm(e) {
     e.preventDefault();
