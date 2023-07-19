@@ -15,9 +15,7 @@ function cargarListeners() {
     productoDescripcion.addEventListener('blur', verificar);
     window.addEventListener('resize', () => {
         const padre = urlImg.parentElement.parentElement.parentElement;
-        console.log(padre);
         const eliminar = padre.querySelector('.form-agregar__alerta');
-        console.log(eliminar);
         if(eliminar) {
             if(window.innerWidth > 1440) {
                 eliminar.remove();
