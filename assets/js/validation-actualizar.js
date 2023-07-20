@@ -1,4 +1,4 @@
-import {crear} from "../../controllers/crear-producto.controller.js";
+import {actualizar} from "../../controllers/actualizar-producto-controller.js";
 const boxImg = document.querySelector('.form-agregar__box');
 const urlImg = document.querySelector('#input-url');
 const categoria = document.querySelector('#agregar-categoria');
@@ -6,6 +6,7 @@ const productoNombre = document.querySelector('#input-producto');
 const productoPrecio = document.querySelector('#input-precio');
 const productoDescripcion = document.querySelector('#descripcion-textarea');
 const agregarForm = document.querySelector('.form-agregar');
+
 cargarListeners();
 function cargarListeners() {
     agregarForm.addEventListener('submit', agregarProducto);
@@ -38,7 +39,7 @@ function agregarProducto(e) {
         crearAlerta('Todos los campos son necesarios', agregarForm);
         return;
     } else {
-        crear(productoArmado.imgUrl,productoArmado.categoriaValor,productoArmado.productoValor,productoArmado.precioValor,productoArmado.descripcionValor);
+        actualizar(productoArmado.imgUrl,productoArmado.categoriaValor,productoArmado.productoValor,productoArmado.precioValor,productoArmado.descripcionValor);
         boxImg.style.backgroundImage = "";
         boxImg.style.border = '1px dashed #464646';
         icon.classList.remove('form-agregar--hidden');

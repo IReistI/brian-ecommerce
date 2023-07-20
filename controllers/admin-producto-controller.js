@@ -7,8 +7,8 @@ const productosAdmin = (name,imgUrl,price,id) => {
         <div class="admin-card__img-icons">
             <img class="admin-card__imagen" src="${imgUrl}" alt="producto ${id}">
             <div class="admin-card__icons">
-                <img class="admin-card__icon" src="assets/icons/icon-delete.svg" alt="icon delete">
-                <img class="admin-card__icon" src="assets/icons/icon-edit.svg" alt="icon edit">
+                <a class="admin-card__delete-click" href=#><img class="admin-card__icon-delete" src="assets/icons/icon-delete.svg" alt="icon delete"></a>
+                <a href="actualizar-producto.html?id=${id}"><img class="admin-card__icon-update" src="assets/icons/icon-edit.svg" alt="icon edit"></a>
             </div>    
         </div>
         <div class="admin-card__todo">

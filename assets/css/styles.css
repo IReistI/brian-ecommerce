@@ -951,7 +951,11 @@ main {
     right: 15px;
     transition: transform 100ms ease-in-out;
 }
-.admin-card__icon:hover {
+.admin-card__icon-delete:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.admin-card__icon-update:hover {
     cursor: pointer;
     transform: scale(1.2);
 }

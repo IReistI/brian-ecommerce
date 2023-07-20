@@ -1,130 +1,148 @@
 {
-    "producto": [
-        {
-            "name": "Producto 1",
-            "imgUrl": "assets/img/star-wars-1.svg",
-            "categoria": "Star Wars",
-            "price": "60,00",
-            "id": "1"
-        },
-        {
-            "name": "Producto 2",
-            "imgUrl": "assets/img/star-wars-2.svg",
-            "categoria": "Star Wars",
-            "price": "60,00",
-            "id": "2"
-        },
-        {
-            "name": "Producto 3",
-            "imgUrl": "assets/img/star-wars-3.svg",
-            "categoria": "Star Wars",
-            "price": "60,00",
-            "id": "3"
-        },
-        {
-            "name": "Producto 4",
-            "imgUrl": "assets/img/star-wars-4.svg",
-            "categoria": "Star Wars",
-            "price": "60,00",
-            "id": "4"
-        },
-        {
-            "name": "Producto 5",
-            "imgUrl": "assets/img/star-wars-5.svg",
-            "categoria": "Star Wars",
-            "price": "60,00",
-            "id": "5"
-        },
-        {
-            "name": "Producto 6",
-            "imgUrl": "assets/img/star-wars-6.svg",
-            "categoria": "Star Wars",
-            "price": "60,00",
-            "id": "6"
-        },
-        {
-            "name": "Producto 7",
-            "imgUrl": "assets/img/consoles-1.svg",
-            "categoria": "Consoles",
-            "price": "80,00",
-            "id": "7"
-        },
-        {
-            "name": "Producto 8",
-            "imgUrl": "assets/img/consoles-2.svg",
-            "categoria": "Consoles",
-            "price": "80,00",
-            "id": "8"
-        },
-        {
-            "name": "Producto 9",
-            "imgUrl": "assets/img/consoles-3.svg",
-            "categoria": "Consoles",
-            "price": "80,00",
-            "id": "9"
-        },
-        {
-            "name": "Producto 10",
-            "imgUrl": "assets/img/consoles-4.svg",
-            "categoria": "Consoles",
-            "price": "80,00",
-            "id": "10"
-        },
-        {
-            "name": "Producto 11",
-            "imgUrl": "assets/img/consoles-5.svg",
-            "categoria": "Consoles",
-            "price": "80,00",
-            "id": "11"
-        },
-        {
-            "name": "Producto 12",
-            "imgUrl": "assets/img/consoles-6.svg",
-            "categoria": "Consoles",
-            "price": "80,00",
-            "id": "12"
-        },
-        {
-            "name": "Producto 13",
-            "imgUrl": "assets/img/various-1.svg",
-            "categoria": "Various",
-            "price": "100,00",
-            "id": "13"
-        },
-        {
-            "name": "Producto 14",
-            "imgUrl": "assets/img/various-2.svg",
-            "categoria": "Various",
-            "price": "100,00",
-            "id": "14"
-        },
-        {
-            "name": "Producto 15",
-            "imgUrl": "assets/img/various-3.svg",
-            "categoria": "Various",
-            "price": "100,00",
-            "id": "15"
-        },
-        {
-            "name": "Producto 16",
-            "imgUrl": "assets/img/various-4.svg",
-            "categoria": "Various",
-            "price": "100,00",
-            "id": "16"
-        },
-        {
-            "name": "Producto 17",
-            "imgUrl": "assets/img/various-5.svg",
-            "categoria": "Various",
-            "price": "100,00",
-            "id": "17"
-        },
-        {
-            "name": "Producto 18",
-            "imgUrl": "assets/img/various-6.svg",
-            "categoria": "Various",
-            "price": "100,00",
-            "id": "18"
-        }
-    ]
+  "producto": [
+    {
+      "name": "Producto 1",
+      "imgUrl": "assets/img/star-wars-1.svg",
+      "categoria": "Star Wars",
+      "price": "60,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "1"
+    },
+    {
+      "name": "Producto 2",
+      "imgUrl": "assets/img/star-wars-2.svg",
+      "categoria": "Star Wars",
+      "price": "60,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "2"
+    },
+    {
+      "name": "Producto 3",
+      "imgUrl": "assets/img/star-wars-3.svg",
+      "categoria": "Star Wars",
+      "price": "60,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "3"
+    },
+    {
+      "name": "Producto 4",
+      "imgUrl": "assets/img/star-wars-4.svg",
+      "categoria": "Star Wars",
+      "price": "60,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "4"
+    },
+    {
+      "name": "Producto 5",
+      "imgUrl": "assets/img/star-wars-5.svg",
+      "categoria": "Star Wars",
+      "price": "60,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "5"
+    },
+    {
+      "name": "Producto 6",
+      "imgUrl": "assets/img/star-wars-6.svg",
+      "categoria": "Star Wars",
+      "price": "60,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "6"
+    },
+    {
+      "name": "Producto 7",
+      "imgUrl": "assets/img/consoles-1.svg",
+      "categoria": "Consoles",
+      "price": "80,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "7"
+    },
+    {
+      "name": "Producto 8",
+      "imgUrl": "assets/img/consoles-2.svg",
+      "categoria": "Consoles",
+      "price": "80,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "8"
+    },
+    {
+      "name": "Producto 9",
+      "imgUrl": "assets/img/consoles-3.svg",
+      "categoria": "Consoles",
+      "price": "80,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "9"
+    },
+    {
+      "name": "Producto 10",
+      "imgUrl": "assets/img/consoles-4.svg",
+      "categoria": "Consoles",
+      "price": "80,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "10"
+    },
+    {
+      "name": "Producto 11",
+      "imgUrl": "assets/img/consoles-5.svg",
+      "categoria": "Consoles",
+      "price": "80,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "11"
+    },
+    {
+      "name": "Producto 12",
+      "imgUrl": "assets/img/consoles-6.svg",
+      "categoria": "Consoles",
+      "price": "80,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "12"
+    },
+    {
+      "name": "Producto 13",
+      "imgUrl": "assets/img/various-1.svg",
+      "categoria": "Various",
+      "price": "100,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "13"
+    },
+    {
+      "name": "Producto 14",
+      "imgUrl": "assets/img/various-2.svg",
+      "categoria": "Various",
+      "price": "100,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "14"
+    },
+    {
+      "name": "Producto 15",
+      "imgUrl": "assets/img/various-3.svg",
+      "categoria": "Various",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "price": "100,00",
+      "id": "15"
+    },
+    {
+      "name": "Producto 16",
+      "imgUrl": "assets/img/various-4.svg",
+      "categoria": "Various",
+      "price": "100,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "16"
+    },
+    {
+      "name": "Producto 17",
+      "imgUrl": "assets/img/various-5.svg",
+      "categoria": "Various",
+      "price": "100,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "17"
+    },
+    {
+      "name": "Producto 18",
+      "imgUrl": "assets/img/various-6.svg",
+      "categoria": "Various",
+      "price": "100,00",
+      "descripcion": "lorem ipsum lorem lorem ipsum ipsum",
+      "id": "18"
+    }
+  ]
 }
