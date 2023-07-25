@@ -8,7 +8,7 @@ const nuevoProducto = (name,imgUrl,price,id) => {
                         <div class="card__todo">
                             <p class="card__text">${name}</p>
                             <p class="card__price">ARS$ ${price}</p>
-                            <a href="producto.html?id=${id}" class="card__enlace">Ver Producto</a>
+                            <a href="ver-producto.html?id=${id}" target="_blank" class="card__enlace">Ver Producto</a>
                         </div>`;
     card.classList.add('card');
     card.innerHTML = contenido;
@@ -21,18 +21,25 @@ const categoriaVarios = document.querySelector('#various').lastElementChild;
 productoServicios
     .mostrarProductos()
     .then( (data) => {
+        let cont = 0;
+        let cont2 = 0;
+        let cont3 = 0;
         data.forEach( producto => {
-            if(producto.categoria === 'Star Wars') {
+            
+            if(producto.categoria === 'Star Wars' && cont < 6) {
                 const nuevoPro = nuevoProducto(producto.name,producto.imgUrl,producto.price,producto.id);
                 categoriaStarWars.appendChild(nuevoPro);
+                cont++;
             }
-            if(producto.categoria === 'Consoles') {
+            if(producto.categoria === 'Consoles' && cont2 < 6) {
                 const nuevoPro = nuevoProducto(producto.name,producto.imgUrl,producto.price,producto.id);
                 categoriaConsoles.appendChild(nuevoPro);
+                cont2++;
             }
-            if(producto.categoria === 'Various') {
+            if(producto.categoria === 'Various' && cont3 < 6) {
                 const nuevoPro = nuevoProducto(producto.name,producto.imgUrl,producto.price,producto.id);
                 categoriaVarios.appendChild(nuevoPro);
+                cont3++;
             }
         });
     })

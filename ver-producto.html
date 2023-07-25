@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN by BRAIAN</title>
+    <title>Ver Producto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/internas/ver-producto.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/spinner.css">
 </head>
@@ -24,30 +25,84 @@
                     </div>
                 </form>
             </div>
-            <div class="btn-flotante">
-                <img id="btnFlotante" class="btn-img" src="assets/icons/icon-moon.svg" alt="black mode">
+            <div class="nav__icon-login">
+                <div class="btn-flotante">
+                    <img id="btnFlotante" class="btn-img" src="assets/icons/icon-moon.svg" alt="black mode">
+                </div>
             </div>
             <div class="nav__logo2">
                 <img class="nav__icono" src="assets/icons/icons8-búsqueda-oscuro.svg" alt="busqueda icono">
             </div>
         </nav>
     </header>    
-    <main class="container form-login__flex">
-        <form action="#" class="form-login">
-            <h3 class="form-login__title">Iniciar Sesión</h3>
-            <div class="form-login__container-input">
-                <div class="form-login__mask">
-                    <input type="email" name="email" class="form-login__input" id="login-email" placeholder="Escriba su correo electrónico">
-                </div>
-            </div>
-            <div class="form-login__container-input">
-                <div class="form-login__mask">
-                    <input type="password" name="password" class="form-login__input" id="login-password" placeholder="Escriba su contraseña">
-                </div>
-            </div>
-            <input type="submit" value="Entrar" class="form-login__send opacity" id="login-send" data-button-login disabled>
-        </form>
+    <main class="container grid">
+        
     </main>
+    <section class="productos-similares container">
+        <h2 class="productos-similares__title">Productos similares</h2>
+        <div class="producto__grid">
+            <!-- <div class="producto__card">
+                <div>
+                    <img class="producto-card__imagen" src="assets/img/consoles-1.svg" alt="producto consoles 1">    
+                </div>
+                <div class="producto-card__todo">
+                    <p class="producto-card__text">Control XYZ</p>
+                    <p class="producto-card__price">ARS$ 60,00</p>
+                    <a href="ver-producto.html" class="producto-card__enlace">Ver Producto</a>
+                </div>
+            </div>
+            <div class="producto__card">
+                <div>
+                    <img class="producto-card__imagen" src="assets/img/star-wars-2.svg" alt="producto s-w 2">    
+                </div>
+                <div class="producto-card__todo">
+                    <p class="producto-card__text">Control XYZ</p>
+                    <p class="producto-card__price">ARS$ 60,00</p>
+                    <a href="ver-producto.html" class="producto-card__enlace">Ver Producto</a>
+                </div>
+            </div>
+            <div class="producto__card">
+                <div>
+                    <img class="producto-card__imagen" src="assets/img/star-wars-3.svg" alt="producto s-w 3">    
+                </div>
+                <div class="producto-card__todo">
+                    <p class="producto-card__text">Control XYZ</p>
+                    <p class="producto-card__price">ARS$ 60,00</p>
+                    <a href="ver-producto.html" class="producto-card__enlace">Ver Producto</a>
+                </div>
+            </div>
+            <div class="producto__card">
+                <div>
+                    <img class="producto-card__imagen" src="assets/img/star-wars-4.svg" alt="producto s-w 4">    
+                </div>
+                <div class="producto-card__todo">
+                    <p class="producto-card__text">Control XYZ</p>
+                    <p class="producto-card__price">ARS$ 60,00</p>
+                    <a href="ver-producto.html" class="producto-card__enlace">Ver Producto</a>
+                </div>
+            </div>
+            <div class="producto__card">
+                <div>
+                    <img class="producto-card__imagen" src="assets/img/star-wars-5.svg" alt="producto s-w 5">    
+                </div>
+                <div class="producto-card__todo">
+                    <p class="producto-card__text">Control XYZ</p>
+                    <p class="producto-card__price">ARS$ 60,00</p>
+                    <a href="ver-producto.html" class="producto-card__enlace">Ver Producto</a>
+                </div>
+            </div>
+            <div class="producto__card">
+                <div>
+                    <img class="producto-card__imagen" src="assets/img/star-wars-6.svg" alt="producto s-w 6">    
+                </div>
+                <div class="producto-card__todo">
+                    <p class="producto-card__text">Control XYZ</p>
+                    <p class="producto-card__price">ARS$ 60,00</p>
+                    <a href="ver-producto.html" class="producto-card__enlace">Ver Producto</a>
+                </div>
+            </div> -->
+        </div>
+    </section>
     <section class="contacto">
         <div class="contacto__grid container">
             <div class="contacto__center">
@@ -89,8 +144,8 @@
         <p class="footer__text">Desarrolado por Braian Nuñez</p>
         <p class="footer__text">2023</p>
     </footer>
-    <script src="assets/js/dark-mode.js"></script>
-    <script src="assets/js/validation-login.js"></script>
     <script src="assets/js/validation-contact-footer.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+    <script type="module" src="controllers/ver-producto-controller.js"></script>
 </body>
 </html>

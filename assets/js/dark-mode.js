@@ -5,7 +5,6 @@ const h3 = document.querySelectorAll('h3');
 const a = document.querySelectorAll('.contacto__link');
 const pCard = document.querySelectorAll('.card__text');
 const textFooter = document.querySelectorAll('p');
-
 document.addEventListener('DOMContentLoaded', () => {
     darkMode();
 });
@@ -27,6 +26,7 @@ function darkMode() {
         h3.forEach( h3 => h3.classList.add('text-white'));
         a.forEach( a => a.classList.add('text-white'));
         pCard.forEach( p => p.classList.add('text-white'));
+        // pCardAdmin.forEach( p => p.classList.add('text-white'));
         textFooter.forEach( p => p.classList.add('text-white'));
         
     }
@@ -53,6 +53,7 @@ function darkChange() {
         h3.forEach( h3 => h3.classList.add('text-white'));
         a.forEach( a => a.classList.add('text-white'));
         pCard.forEach( p => p.classList.add('text-white'));
+        // pCardAdmin.forEach( p => p.classList.add('text-white'));
         textFooter.forEach( p => p.classList.add('text-white'));
     } else {
         // Está activado darkMode, por lo que se desactiva
@@ -71,6 +72,7 @@ function darkChange() {
         h3.forEach( h3 => h3.classList.remove('text-white'));
         a.forEach( a => a.classList.remove('text-white'));
         pCard.forEach( p => p.classList.remove('text-white'));
+        // pCardAdmin.forEach( p => p.classList.remove('text-white'));
         textFooter.forEach( p => p.classList.remove('text-white'));
     }
 }
