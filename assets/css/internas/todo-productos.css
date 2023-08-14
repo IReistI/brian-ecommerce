@@ -1,0 +1,50 @@
+.todo-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-gray);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+@media (min-width: 1440px) {
+    .todo-title {
+        font-size: 3.2rem;
+    }
+}
+.todo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+@media (min-width: 768px) {
+    .todo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1440px) {
+    .todo {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+.todo-card__imagen {
+    height: 17.4rem;
+    object-fit: cover;
+}
+.todo-card__todo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-gray);
+}
+.todo-card__price {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.todo-card__enlace {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-blue);
+}
+@media (min-width: 768px) {
+    .todo-card__enlace {
+        font-size: 1.6rem;
+    }
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/spinner.css">
+    <link rel="stylesheet" href="assets/css/barra-busqueda.css">
 </head>
 <body>
     <header>
@@ -36,7 +37,14 @@
                 <img class="nav__icono" src="assets/icons/icons8-búsqueda-oscuro.svg" alt="busqueda icono">
             </div>
         </nav>
-        
+        <div class="container nav__busqueda--display">
+            <form action="#" class="search">
+                <div class="search__mask">
+                    <input class="search__input" type="tex1t" placeholder="¿Qué deseas buscar?">
+                    <img class="search__icono" src="assets/icons/icons8-búsqueda.svg" alt="search icono">
+                </div>
+            </form>
+        </div>
         <section class="hero">
             <div class="hero__flex container">
                 <div class="hero__todo">
@@ -51,10 +59,10 @@
             <section class="star-wars" id="star-wars">
                 <div class="star-wars__head">
                     <h2 class="star-wars__title">Star Wars</h2>
-                    <div class="star-wars__enlaces">
-                        <a href="#" class="star-wars__enlace" id="btn-verTodo">Ver Todo</a>
-                        <a href="#"><img src="assets/icons/icon-arrow-blue.svg" alt="ir a todo"></a>
-                    </div>
+                    <!-- <div class="star-wars__enlaces">
+                        <a href="todo.html" class="star-wars__enlace" id="btn-verTodo">Ver Todo</a>
+                        <a href="todo.html" class="star-wars__icon"><img src="assets/icons/icon-arrow-blue.svg" alt="ir a todo"></a>
+                    </div> -->
                 </div>
                 <div class="card__grid">
                     <!-- <div class="card">
@@ -123,10 +131,10 @@
             <section class="consoles" id="consoles">
                 <div class="consoles__head">
                     <h2 class="consoles__title">Consolas</h2>
-                    <div class="consoles__enlaces">
-                        <a href="#" class="consoles__enlace" id="btn-verTodo">Ver Todo</a>
-                        <a href="#"><img src="assets/icons/icon-arrow-blue.svg" alt="ir a todo"></a>
-                    </div>
+                    <!-- <div class="consoles__enlaces">
+                        <a href="todo.html" class="consoles__enlace" id="btn-verTodo">Ver Todo</a>
+                        <a href="todo.html" class="consoles__icon"><img src="assets/icons/icon-arrow-blue.svg" alt="ir a todo"></a>
+                    </div> -->
                 </div>
                 <div class="card__grid">
                     <!-- <div class="card">
@@ -195,10 +203,10 @@
             <section class="various" id="various">
                 <div class="various__head">
                     <h2 class="various__title">Various</h2>
-                    <div class="various__enlaces">
-                        <a href="#" class="various__enlace" id="btn-verTodo">Ver Todo</a>
-                        <a href="#"><img src="assets/icons/icon-arrow-blue.svg" alt="ir a todo"></a>
-                    </div>
+                    <!-- <div class="various__enlaces">
+                        <a href="todo.html" class="various__enlace" id="btn-verTodo">Ver Todo</a>
+                        <a href="todo.html" class="various__icon"><img src="assets/icons/icon-arrow-blue.svg" alt="ir a todo"></a>
+                    </div> -->
                 </div>
                 <div class="card__grid">
                     <!-- <div class="card">
@@ -307,6 +315,6 @@
     </footer>
     <script type="module" src="controllers/producto-controller.js"></script>
     <script src="assets/js/validation-contact-footer.js"></script>
-    <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/search-button.js"></script>
 </body>
 </html>

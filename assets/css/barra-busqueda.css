@@ -1,0 +1,29 @@
+.nav__busqueda--display {
+    display: none;
+}
+.search {
+    display: flex;
+    padding-bottom: 1rem;
+}
+.search__mask {
+    width: 100%;
+    max-height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 2rem;
+}
+.search__input {
+    all: unset;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #464646;
+    width: 90%;
+}
+.search__icono {
+    width: 10%;
+}
+.search__icono:hover {
+    cursor: pointer;
+}
